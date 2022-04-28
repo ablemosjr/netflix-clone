@@ -16,6 +16,8 @@ Com conceitos de:
 Adicionado ao projeto:
 - Bootstrap
 
+![pic-netflix-clone](https://user-images.githubusercontent.com/89210954/165791716-1ce83617-1753-4028-9c99-0f797ecddf42.png)
+
 > _Digital Innovation One_ :
 >  www.dio.me
 

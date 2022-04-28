@@ -1,0 +1,226 @@
+/* Base */ 
+:root {
+    --vermelho:#E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: #FFF;
+}
+
+/* Filme principal */
+.main-movie {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/Peaky_Blinders.jpg");
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.main-movie .desc {
+    margin-top: 2%;
+    margin-bottom: 50px;
+}
+
+.title {
+    margin-top: 14%;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    margin-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.main-movie .container-main {
+    width: 65%;
+}
+
+.box-film {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.slider {
+    margin-top: 10px;
+}
+
+/* Modal */
+.modal-dialog {
+   max-width: 600px; 
+}
+
+.modal-dialog .modal-content {
+    background: var(--preto);
+}
+
+.modal-hero {
+    height: 300px;
+    background-image: url(../img/wpp/Peaky_Blinders_wpp.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.modal-hero::after {
+    content: '';
+    width: 100%;
+    height: 200px;
+    display: block;
+    background: linear-gradient(180deg, rgba(23,23,23,0)0%, #171717 100%);
+    position: absolute;
+    left: 0;
+    margin-top: -180px;
+    z-index: 1;
+}
+
+.modal-hero img {
+    width: 250px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -5px;
+}
+
+.modal-hero-infos {
+    position: relative;
+    z-index: 2;
+}
+
+.modal-hero-infos button:first-child {
+    margin-right: 25px;
+}
+
+.modal-hero-infos button:nth-child(2), .modal-hero-infos button:nth-child(3) {
+    border-radius: 500%;
+    padding: 15px 15px;
+    width: 50px;
+}
+
+.modal-hero-infos button:nth-child(3) {
+    margin-left: -15px;
+}
+
+.film-desc {
+    font-size: 15px;
+    color: white;
+}
+
+.index {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.index text {
+    color: white;
+}
+
+#ep-list {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+#ep-list li:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#ep-list li {
+    padding: 20px;
+}
+
+#ep-list li p {
+    font-size: 13px;
+}
+
+.text-white, .form-control {
+    margin-top: 20px;
+}
+
+.form-control {
+    background: var(--preto);
+    color: white;
+}
+
+/* Mudando wallpapers modal */
+.lucifer {
+     background-image: url(../img/wpp/Lucifer_wpp.jpg) ;
+}
+
+.ricknmorty {
+    background-image: url(../img/wpp/Rick_and_Morty_wpp.jpg);
+}
+
+.forlife {
+    background-image: url(../img/wpp/For_Life_wpp.jpg);
+}
+
+.suits {
+    background-image: url(../img/wpp/Suits_wpp.jpg);
+}
+
+.valhalla {
+    background-image: url(../img/wpp/Vikings_wpp.jpg);
+}
+
+.lostinspace {
+    background-image: url(../img/wpp/Lost_in_Space_wpp.jpg)
+}

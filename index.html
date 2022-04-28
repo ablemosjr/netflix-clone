@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPLIX</title>
+
+    <!--Bootstrap CSS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- CSS Responsivo -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+            <h2 class="logo">REPLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#">Desenhos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-movie">
+            <div class="container-main">
+                <h3 class="title">PEAKY BLINDERS</h3>
+                <p class="desc">Thomas Shelby e seus irmãos retornam a Birmingham depois de servir no exército britânico durante a Primeira Guerra Mundial.
+                    Os Peaky Blinders, a gangue na qual Thomas é líder, controlam a cidade de Birmingham. Mas, como as ambições de Shelby se estendem para
+                    além de Birmingham, ele planeja construir o império de negócios que criou e impedir qualquer um que atrapalhar.
+                </p>
+                <div class="buttons">
+                    <button role="button" class="btn" onclick="netflix()">
+                        <i class="fa-solid fa-play fa-lg"></i>
+                        ONDE ASSISTIR
+                    </button>
+                    <button role="button" class="btn" data-toggle="modal" data-target="#modal-film">
+                        <i class="fa-solid fa-circle-info fa-lg"></i>
+                        MAIS INFORMAÇÕES
+                    </button> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="slider">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="./img/For_Life_min.jpg" alt="Wallpaper For Life" data-toggle="modal" data-target="#modal-film-forlife">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/Lucifer_min.jpg" alt="Wallpaper Lucifer" data-toggle="modal" data-target="#modal-film-lucifer">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/Rick_n_Morty_min.jpg" alt="Wallpaper Rick and Morty" data-toggle="modal" data-target="#modal-film-ricknmorty">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/Suits_min.jpg" alt="Wallpaper Suits" data-toggle="modal" data-target="#modal-film-suits">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/Vikings_Valhalla_min.jpg" alt="Wallpaper Vikings: Valhalla" data-toggle="modal" data-target="#modal-film-valhalla">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/Lost_in_Space_min.jpg" alt="Wallpaper Lost in Space" data-toggle="modal" data-target="#modal-film-lostinspace">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-film">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-hero">
+                    <img src="./img/Logos/Logo PEAKY BLINDERS.png" alt="Logo Peaky Blinders">
+                    <div class="col-12 modal-hero-infos">
+                        <div class="buttons">
+                            <button role="button" class="btn" onclick="netflix()">
+                                <i class="fa-solid fa-play fa-lg"></i>
+                                ONDE ASSISTIR
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-infos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="film-desc">
+                                    <p class="film-desc-modal">Thomas Shelby e seus irmãos retornam a Birmingham depois de servir no exército britânico durante a Primeira Guerra Mundial.
+                                        Os Peaky Blinders, a gangue na qual Thomas é líder, controlam a cidade de Birmingham. Mas, como as ambições de Shelby se estendem para
+                                        além de Birmingham, ele planeja construir o império de negócios que criou e impedir qualquer um que atrapalhar.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <p class="index">
+                                    Elenco: <text>Cillian Murphy, Helen McCrory, Paul Anderson, Sophie Rundle, Annabelle Wallis, Joe Cole, Benjamin Zephaniah, Aimee-Ffion Edwards, Finn Cole, 
+                                    Natasha O'Keeffe, Packy Lee.</text>
+                                    <br><br>Gênero: <text>Séries policiais, Britânico, Obras de época.</text>
+                                    <br><br>Cenas e momentos: <text>Violentos.</text>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-7 text-left">
+                                <h3 class="text-white">Episódios</h3>
+                            </div>
+                            <div class="col-5 text-right">
+                                <select class="form-control" id="">
+                                    <option>Temporada 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul id="ep-list">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">1</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="./img/wpp/Peaky_Blinders_wpp.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome Episódio</h6>
+                                            <p class="text-muted">O ambicioso gângster Thomas Shelby percebe que um carregamento de armas desaparecido
+                                                pode ser sua grande chance de subir na vida.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-film-lucifer">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-hero lucifer">
+                    <img src="./img/Logos/Logo Lucifer.png" alt="Logo Lucifer">
+                    <div class="col-12 modal-hero-infos">
+                        <div class="buttons">
+                            <button role="button" class="btn" onclick="netflix()">
+                                <i class="fa-solid fa-play fa-lg"></i>
+                                ONDE ASSISTIR
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-infos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="film-desc">
+                                    <p class="film-desc-modal">Entediado com a vida nas trevas, o diabo se muda para Los Angeles, abre um piano-bar e 
+                                    empresta sua sabedoria a uma investigadora de assassinatos.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <p class="index">
+                                    Elenco: <text>Tom Ellis, Lauren German, Kevin Alejandro, D.B. Woodside, Lesley-Ann Brandt, Aimee Garcia, Rachael Harris,
+                                    Scarlett Estevez, Tricia Helfer.</text>
+                                    <br><br>Gênero: <text>Séries policiais, Séries de fantasia, Séries baseadas em HQ.</text>
+                                    <br><br>Cenas e momentos: <text>Irreverentes, Empolgantes.</text>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-7 text-left">
+                                <h3 class="text-white">Episódios</h3>
+                            </div>
+                            <div class="col-5 text-right">
+                                <select class="form-control" id="">
+                                    <option>Temporada 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul id="ep-list">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">1</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="./img/wpp/Lucifer_wpp.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome Episódio</h6>
+                                            <p class="text-muted">Depois que um velho conhecido tem uma morte violenta, o charmoso Lucifer jura
+                                            vingança contra os culpados e consegue uma aliada inesperada.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-film-ricknmorty">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-hero ricknmorty">
+                    <img src="./img/Logos/Logo Rick and Morty.png" alt="Logo Rick and Morty">
+                    <div class="col-12 modal-hero-infos">
+                        <div class="buttons">
+                            <button role="button" class="btn" onclick="netflix()">
+                                <i class="fa-solid fa-play fa-lg"></i>
+                                ONDE ASSISTIR
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-infos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="film-desc">
+                                    <p class="film-desc-modal">Rick é um velho mentalmente desequilibrado, mas cientificamente talentoso que se 
+                                    reconectou recentemente com sua família. Ele passa a maior parte do tempo envolvendo o jovem neto Morty em aventuras 
+                                    perigosas e estranhas no espaço e em universos alternativos. Compostos à vida familiar já instável de Morty, esses eventos causam muito sofrimento a Morty em casa e na escola.</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <p class="index">
+                                    Elenco: <text>Justin Roiland, Chris Parnell, Spencer Grammer, mais.</text>
+                                    <br><br>Gênero: <text>Séries de ficção científica, Sitcoms, Comédias para a TV.</text>
+                                    <br><br>Cenas e momentos: <text>Absurdo, Peculiares, Irreverentes.</text>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-7 text-left">
+                                <h3 class="text-white">Episódios</h3>
+                            </div>
+                            <div class="col-5 text-right">
+                                <select class="form-control" id="">
+                                    <option>Temporada 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul id="ep-list">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">1</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="./img/wpp/Rick_and_Morty_wpp.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome Episódio</h6>
+                                            <p class="text-muted">Rick leva Morty em uma viagem a outra dimensão para procurar sementes especiais.
+                                            Jerry e Beth discutem a influência de Rick sobre o filho deles.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-film-forlife">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-hero forlife">
+                    <img src="./img/Logos/Logo For Life.png" alt="Logo For Life">
+                    <div class="col-12 modal-hero-infos">
+                        <div class="buttons">
+                            <button role="button" class="btn" onclick="netflix()">
+                                <i class="fa-solid fa-play fa-lg"></i>
+                                ONDE ASSISTIR
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-infos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="film-desc">
+                                    <p class="film-desc-modal">Um prisioneiro torna-se advogado, litigando casos para outros detentos 
+                                    enquanto luta para invalidar sua própria sentença de prisão perpétua por um crime que não cometeu.</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <p class="index">
+                                    Elenco: <text>Nicholas Pinnock, Indira Varma, Joy Bryant, Dorian Missick, Tyla Harris, Timothy Busfield, Mary Stuart Masterson, Boris McGiver e mais</text>
+                                    <br><br>Gênero: <text>Séries policiais, Séries de tribunal, Séries dramáticas sobre questões sociais.</text>
+                                    <br><br>Cenas e momentos: <text>Comoventes.</text>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-7 text-left">
+                                <h3 class="text-white">Episódios</h3>
+                            </div>
+                            <div class="col-5 text-right">
+                                <select class="form-control" id="">
+                                    <option>Temporada 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul id="ep-list">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">1</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="./img/wpp/For_Life_wpp.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome Episódio</h6>
+                                            <p class="text-muted">Aaron Wallace, agora advogado recém-formado na prisão, assume seu primeiro caso e enfrenta um inimigo conhecido.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-film-suits">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-hero suits">
+                    <img src="./img/Logos/Logo Suits.png" alt="Logo Suits">
+                    <div class="col-12 modal-hero-infos">
+                        <div class="buttons">
+                            <button role="button" class="btn" onclick="netflix()">
+                                <i class="fa-solid fa-play fa-lg"></i>
+                                ONDE ASSISTIR
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-infos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="film-desc">
+                                    <p class="film-desc-modal">Mesmo sem se formar e sem licença para advogar, um jovem brilhante impressiona um importante advogado e consegue uma cobiçada posição em sua firma.</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <p class="index">
+                                    Elenco: <text>Gabriel Macht, Sarah Rafferty, Rick Hoffman, Patrick J. Adams, Meghan Markle, Gina Torrer e mais</text>
+                                    <br><br>Gênero: <text>Séries policiais, Séries de tribunal, Séries dramáticas, Comédias para a TV.</text>
+                                    <br><br>Cenas e momentos: <text>Espirituosos.</text>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-7 text-left">
+                                <h3 class="text-white">Episódios</h3>
+                            </div>
+                            <div class="col-5 text-right">
+                                <select class="form-control" id="">
+                                    <option>Temporada 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul id="ep-list">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">1</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="./img/wpp/Suits_wpp.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome Episódio</h6>
+                                            <p class="text-muted">Harvey é promovido e precisa recrutar um formando da faculdade de Harvard. Ele escolhe Mike Ross, mas há um problema: Mike não tem diploma.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-film-valhalla">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-hero valhalla">
+                    <img src="./img/Logos/Logo Vikings.png" alt="Logo Valhalla">
+                    <div class="col-12 modal-hero-infos">
+                        <div class="buttons">
+                            <button role="button" class="btn" onclick="netflix()">
+                                <i class="fa-solid fa-play fa-lg"></i>
+                                ONDE ASSISTIR
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-infos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="film-desc">
+                                    <p class="film-desc-modal">Nesta sequência de Vikings, cem anos se passaram. Uma nova geração de heróis lendários cria seu destino e faz história.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <p class="index">
+                                    Elenco: <text>Sam Corlett, Leo Suter, Frida Gustavsson, mais</text>
+                                    <br><br>Gênero: <text>Obras de época, Séries dramáticas, Séries dos EUA.</text>
+                                    <br><br>Cenas e momentos: <text>Violentos, Sombrios, Empolgantes.</text>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-7 text-left">
+                                <h3 class="text-white">Episódios</h3>
+                            </div>
+                            <div class="col-5 text-right">
+                                <select class="form-control" id="">
+                                    <option>Temporada 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul id="ep-list">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">1</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="./img/wpp/Vikings_wpp.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome Episódio</h6>
+                                            <p class="text-muted">Planejando vingar um massacre na Inglaterra, os exércitos vikings se reúnem em Kattegat. Mas os irmãos Leif e Feydis querem outro tipo de retaliação</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-film-lostinspace">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-hero lostinspace">
+                    <img src="./img/Logos/Logo Lost in Space.png" alt="Logo Lost in Space">
+                    <div class="col-12 modal-hero-infos">
+                        <div class="buttons">
+                            <button role="button" class="btn" onclick="netflix()">
+                                <i class="fa-solid fa-play fa-lg"></i>
+                                ONDE ASSISTIR
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                            </button>
+                            <button role="button" class="btn">
+                                <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-infos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="film-desc">
+                                    <p class="film-desc-modal">Após um pouso forçado em um planeta desconhecido, a família Robinson tenta sobreviver aos perigos que encontra neste novo mundo.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <p class="index">
+                                    Elenco: <text>Molly Parker, Toby Stephens, Maxwell Jenkins, mais</text>
+                                    <br><br>Gênero: <text>Séries para a família toda, Séries dramáticas, Séries dos EUA.</text>
+                                    <br><br>Cenas e momentos: <text>Suspense no ar.</text>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row infos">
+                            <div class="col-7 text-left">
+                                <h3 class="text-white">Episódios</h3>
+                            </div>
+                            <div class="col-5 text-right">
+                                <select class="form-control" id="">
+                                    <option>Temporada 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ul id="ep-list">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">1</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-fluid" src="./img/wpp/Lost_in_Space_wpp.jpg">
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome Episódio</h6>
+                                            <p class="text-muted">A caminho de uma colônia espacial, os Robinsons fazem um pouso de emergência em um planeta desconhecido e lutam para sobreviver a uma noite angustiante.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Logos Font Awesome -->
+    <script defer src="https://kit.fontawesome.com/1d4bd80e58.js" crossorigin="anonymous"></script>
+    
+    <!-- Owl jQuerry -->
+    <script defer src="js/owl/jquery.min.js"></script>
+    <script defer src="js/owl/owl.carousel.min.js"></script>
+    <script defer src="js/owl/setup.js"></script>
+
+    <!-- CDN jQuerry -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CDN Bootstrap -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    
+    <script defer src="./js/main.js"></script>
+</body>
+</html>
